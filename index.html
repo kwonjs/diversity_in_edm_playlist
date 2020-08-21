@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <title>edm &amp; its diversity issue</title>
+    <style>
+        
+        body {
+            background-color: #06162a;
+            color: white;
+            font-family: 'Work Sans', sans-serif;
+        }
+      
+        /*.jumbotron {
+            background-image: url(edm_header_dark.png);
+            background-size: cover;
+            background-position: left;
+            overflow: hidden;
+            
+        }*/
+        
+        a {
+            color: skyblue;
+        }
+        
+        a:hover {
+            color: greenyellow;
+        }
+        
+        header {
+            
+            background-image:url(spotify_edm_cover.png);
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            
+        }
+        
+        header h1 {
+            margin-top: 30vh;
+            padding-left: 5vh;
+            font-size: 9vh;
+        }
+        
+        header p {
+            padding-left: 5vh;
+            font-size: 3vh;
+        }
+        
+        header img {
+            width: 120px;
+        }
+        /*
+        nav {
+            margin-top: -5vh;
+            margin-bottom: 7vh;
+        }*/
+        
+        .graphs {
+            
+            background-image:url(spotify_edm_top_artists.png);
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            
+        }
+        
+        .graphs h1 {
+            margin-top: 30vh;
+            padding-right: 5vh;
+            font-size: 9vh;
+        }
+        
+        .graphs p {
+            padding-right: 5vh;
+            font-size: 3vh;
+        }
+        
+    </style>
+  </head>
+  <body>
+      
+      
+    <header class="jumbotron jumbotron-fluid">
+        <h1>examining the diversity <br>in my edm playlist</h1>
+        <p>a mini data scraping &amp; analysis project <br> using <a href = "https://exportify.net"><img alt = "exportify logo" src = "exportify_button.png"></a></p>
+    </header>
+    
+    <!--nav bar stuff--     
+
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand">navigation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#about">about<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#timeline">timeline of edm history</a>
+          <a class="nav-item nav-link" href="#data">data analysis: my own edm tastes</a>
+          <a class="nav-item nav-link" href="#friends">asking friends about their edm tastes</a>
+        </div>
+      </div>
+    </nav>
+
+    end nav bar stuff-->
+      
+    <div class="container">
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10" id = "about">
+                <h2 style = "padding-top: 3vh; padding-bottom: 3vh; text-align: center">why am i evaluating the <i>diversity</i> in my edm playlist?</h2>
+                
+                <!--<p>a short video: </p>
+                <img class="d-block img-fluid" src="http://placehold.it/2000x1400" alt="Placeholder"> -->
+                
+                
+                <!-- 16:9 aspect ratio 
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wwN1j4TSBJw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> -->
+                
+                <p style = "padding-top: 2vh;"> It's important to acknowledge that while mainstream EDM (Electronic Dance Music) artists today are largely <i>white, cis,</i> and <i>male</i>, the <strong><i>history</i></strong> and evolution of EDM involved many influences who weren't all cis, white, and male. </p>
+            </div>
+        </div>  
+      
+      
+        
+        
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10" id = "timeline">
+                <h2 style = "text-align: center; padding-top: 3vh; padding-bottom: 3vh;">a (non-comprehensive) timeline of the evolution of edm</h2>
+                
+                <p style = "padding-top: 2vh; padding-bottom: 3vh;">This timeline documents the early influencers of certain EDM genres (i.e. Frankie Knuckles, known as the "godfather" of house) as well as important technology that facilitated the emergence of different EDM genres (i.e. the Moog synthesizer). </p>
+            </div>
+            
+            <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=13aBGWJZayxoUEoG5WCMMtXKW0ydxeGj0mG2gguMHjDY&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+            
+            <p style = "text-align: center;"><i>If the above timeline breaks, go to <a href = "https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=13aBGWJZayxoUEoG5WCMMtXKW0ydxeGj0mG2gguMHjDY&font=Default&lang=en&initial_zoom=2&height=650"> this link</a>!</i></p>
+        </div>
+            
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10">
+                <h4 style = "text-align: center; padding-bottom: 1vh;">helpful resources that <i>really</i> contributed to this timeline</h4>
+                <ul>
+                    <li><a href = "https://www.dancemusicnw.com/history-electronic-music-classics-define-modern-edm/">The History of Electronic Music and How Classics Still Define Modern EDM</a></li>
+                    <li><a href = "http://www.laweekly.com/the-20-best-dance-music-tracks-in-history/">The 20 Best Dance Music Tracks in History</a></li>
+                    <li><a href = "https://www.chicagotribune.com/entertainment/chi-frankie-knuckles-obit-20140331-column.html">Frankie Knuckles, House Music 'Godfather,' Dead at 59</a></li>
+                    <li><a href = "https://afropunk.com/2018/10/house-music-is-black-american-music/">House Music Is Black American Music</a></li>
+                    <li><a href = "EDM Doesn’t Have a Women Problem, It Has a Straight White Guy Problem">EDM Doesn't Have a Women Problem, It Has a Straight White Guy Problem</a></li>
+                    <li><a href = "https://www.discogs.com/">Discogs (A Huge Music Database)</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10" id = "data">
+                <h2 style = "text-align: center; padding-bottom: 3vh;">examining my own music taste</h2>
+                
+                <p style = "padding-top: 2vh;"> The timeline above gives a glimpse as to how rich the history of EDM is, with songs and artists from different countries in Europe - particularly alternative and experimental bands who weren't afraid to be unconventional in their music production - and in the U.S., especially the house DJs who wanted to provide <a href = "https://www.vice.com/en_us/article/pg8qzz/edm-history-spotify">a safe space for queer/trans marginalized folks.</a></p>
+                
+                <p>Looking at this timeline, I couldn't help but wonder how rich and diverse <strong> my own EDM  listening taste was.</strong></p>
+                
+                <p>Was I listening to <i>a variety of artists</i> from different backgrounds?</p>
+                
+                <p>Were the songs I had on repeat or the most songs I had on my EDM  playlist from <i>people of color (poc)</i> or <i>women/gender-nonconforming/nonbinary folks?</i> </p>
+                <p>(Spoiler alert: they weren't).</p>
+            </div>
+            
+            
+            <!--<audio class="d-block w-100" src="..." width="100%" height="auto" muted controls></audio>-->
+            
+        </div>
+        
+        
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10 data">
+                <h3 style = "text-align: center;">the step-by-step data analysis</h3>
+                <h5 style = "text-align: center;"><i>note: code will be <mark><span color = "black">highlighted in gold</span></mark></i></h5>
+                <h5 style = "padding-top: 2vh; text-align: center;">click to go to a step: <a href = "#step1">1</a> <a href = "#step2">2</a> <a href = "#step3">3</a> <a href = "#step4">4</a> <a href = "#step5">5</a></h5>
+                
+                <p style = "padding-top: 5vh;">Who were the top EDM artists I listened to? I could best determine this by seeing the <i>artists who I had the <strong>most</strong> songs from on my main EDM playlist</i>).</p>
+                
+                <p>Here is my main EDM playlist that has over 1.1k songs: </p>
+                
+                <!-- the playlist-->
+                
+                <iframe src="https://open.spotify.com/embed/playlist/1xhTWESvAZj3SxkXGrd5ut" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" style = "display: block; margin: 0 auto; padding-top: 3vh; padding-bottom: 3vh;"></iframe>
+                
+                <!-- end of the playlist-->
+                
+                <h4 id = "step1" style = "text-align: center; padding-top: 5vh; padding-bottom: 3vh;">step 1: export the playlist</h4>
+                
+                <p style = "padding-top: 1vh;">I  first used an open-source tool called <a href = "https://rawgit.com/watsonbox/exportify/master/exportify.html">Exportify</a> to convert this playlist into a <strong>csv file</strong>.</p>
+                
+                <img src = "exportify_beg.png" style = "height: 30vh; width: 90vh; display: block; margin: 0 auto;" alt = "screenshot image of 'exportify' - a web app that turns spotify playlists into csv files">
+                
+                <p style = "padding-top: 1vh; text-align: center;"><i>note: you should be able to connect your spotify account to this web app</i></p>
+                
+                <p>Once I saw my list of playlists on Spotify:</p>
+                
+                <img src = "exportify_list.png" style = "height: 90vh; width: 100vh; display: block; margin: 0 auto;" alt = "a screenshot of my list of playlists on spotify - i can choose to select and export a single playlist or i can export all of them">
+                
+                <p style = "padding-top: 3vh;"> I searched through my tens of playlists (I have a lot) using the <i>arrow buttons</i> on the top and bottom of the page, then <i>clicked 'export'</i> on the playlist I was looking for: in this case, it was a playlist titled "slide into my E'DM's."</p>
+                
+                <p>I downloaded the outputted .csv file and then took a look at it on Google Sheets:</p>
+                
+                <img src = "raw_csv_file.png" style = "height: 65vh; width: 100vh; display:block; margin: 0 auto;" alt = "a screenshot of what the exported csv file should look like on google sheets - the title of this sheet is the playlist name and the column names include spotify uri, track name, artist name, album name, disc number, track number, track duration, added by, and added date">
+                
+                <h4 id = "step2" style = "text-align: center; padding-top: 5vh; padding-bottom: 3vh;">step 2:  clean/sort the data </h4>
+                
+                <p style = "padding-bottom: 3vh;">What I care most about analyzing is the <strong>artist name</strong>, because I want to see <i>how often each artist's name shows up on my playlist</i> as a way for me to determine who I  listen to the most/who my top artists are. In this case, that would be Column C (highlighted below).</p>
+                
+                <img src = "artist_col_highlighted.png" style = "height: 65vh; width: 100vh; display:block; margin: 0 auto" alt = "the same image as the screenshot before, but with the 'artist name' column highlighted in blue">
+                
+                <p style = "padding-top: 5vh;">I isolated the column with the artist name(s) and put it on another Google sheet/tab. Then, I went over to 'data' and split the text into columns to see which artist was the <i>main</i> artist and which artist(s) were featured on each song on my playlist.</p>
+                
+                <img src = "split_text_col.png" style = "height: 50vh; width: 50vh; display: block; margin: 0 auto; padding-top: 3vh; padding-bottom: 3vh;" alt = "screenshot showing how to split text in a column into multiple columns">
+                
+                <img src = "split_text_col_after.png" style = "height: 40vh; width: 50vh; display: block; margin: 0 auto;" alt = "screenshot showing the aftermath: there are now multiple columns with each column containing a single artist name">
+
+                
+                <h4 id = "step3" style = "text-align: center; padding-top: 5vh; padding-bottom: 3vh;">step 3: measuring frequency with "countif"</h4>
+                
+                <p>I now want to see <strong>how many times an artist's name shows up</strong> in Column 1, or the first artist that is credited for each song on my playlist (since usually this artist is the main artist).</p>
+                
+                <p>To count this, I made a separate column titled "Count (Artist 1)", and then typed in the following command: <mark><span color = "black">=COUNTIF(A$2:A$1126, A2)</span></mark></p>
+                
+                <p>Note: "A$1126" could be "A$700" or "A$10" or any other number. this number should match the <i>length</i> of your playlist. if your playlist has 1000 songs total, it should be "A$1000".</p>
+                
+                <p class = "text-center" style = "color:red;">----- Quick explanation of the logic behind this function -----</p>
+                
+                <p>The function <mark><span color = "black">=COUNTIF()</span></mark>  takes in 2 arguments. The 1st argument is the range of data you're wanting to compare a data point to, and the 2nd argument is that specific data point. The above function essentially looks at all cells inclusively between A2 and A1126 (the 1st argument - there are 1126 songs in my playlist and A1 is just the title of the column) and sees how many times A2 (the 2nd argument) matches with another cell in that range of cells. </p>
+                
+                <p>The dollar symbol ($) is so that you can apply this function to the rest of your column (i.e. comparing A3 with A2 through A1126, A4 with A2 through A1126 etc.) Without shifting that range A2:A1126. In Google Sheets, if you don't put the dollar sign in between the column letter and number, the range will shift if you apply this function to an entire column (i.e. without the $ sign, you would be comparing A3 with A3 through A1127 etc.) </p>
+                
+                <p class = "text-center" style = "color:red;">----- End of quick explanation -----</p>
+                
+                <p>Once I have applied that function to the whole column, I now have a list of the number of times each first artist listed on each song have repeated within the playlist. I can do this for the second artist listed as well, but to keep things simple, I will keep my rudimentary analysis to Artist 1 only.</p>
+                
+                <img src = "count_if_col1.png" style = "height: 80vh; width: 100vh; padding-top: 3vh; display: block; margin: 0 auto;" alt = "the same image as the screenshot before, but with a new column titled 'count (artist 1)'">
+                
+                <h4 id = "step4" style = "text-align: center; padding-top: 5vh; padding-bottom: 3vh;">step 4: filter the data</h4>
+                
+                <p>I can now use the 'filter' function on google sheets to order the artist name column by how often they repeat from <i>greatest to least number of times.</i></p>
+
+                <img src = "where_is_filter.png" style = "height: 45vh; width: 70vh; display: block; margin: 0 auto; padding-top: 3vh; padding-bottom: 3vh;" alt = "screenshot showing where the filter function is">
+
+                <img src = "filter_great_to_least.png" style = "height: 50vh; width: 70vh; display: block; margin: 0 auto; padding-top: 3vh; padding-bottom: 3vh;" alt = "screenshot showing 'sort from Z to A' for 'count' column">
+                
+                <p style = "padding-top: 5vh;">Now I can see who is featured most among all the songs on this playlist! </p>
+                
+                <p>In this playlist, my top artist is actually <strong>WRLD</strong>, an artist on the Canadian label Monstercat. This actually came as a slight surprise to me, because I wouldn't automatically list him on my top 10 favorite artists despite the fact this songs on this playlist feature him most as the main artist.</p>
+                
+                <img src = "after_filter.png" style = "height: 80vh; width: 100vh; padding-top: 3vh; display:block; margin: 0 auto;" alt = "screenshot showing artists sorted by number of times they repeat in the playlist">
+                
+                <h4 id = "step5" style = "padding-top: 5vh; padding-bottom: 3vh; text-align: center;">step 5: using <i>pivot tables</i> instead of 'filter'</h4>
+                
+                <p> An easier way to find out each unique artist I listen to the most is to use Google Sheet's pivot tables!</p>
+                
+                <p> I can do this by going to 'Data' and select 'Pivot table'. It's best to create a pivot table on a new sheet to avoid erasing any hard work done on the current sheet. </p>
+                
+                <img src = "create_pivot_table.png" style = "height: 80vh; width: 100vh; padding-top: 3vh; display: block; margin: 0 auto;" alt = "screenshot showing how to create a new pivot table in google sheets">
+                
+                <p style = "padding-top: 5vh;">From here, I went to 'Rows' and select 'Artist Name' and 'Values' to select 'Count (Artist 1)'. I had 'Count (artist 1)' be summarized by 'COUNTA' and show as 'Default'. </p>
+                
+                <p> I then sorted 'Artist Name' by 'COUNTA of Count (Artist 1)' and have this be in descending order (greatest to least). This will give the <i>number of times</i> an artist shows up in a playlist, and WRLD once again is shown to repeat 30 times in my whole playlist.</p>
+                
+                <img src = "after_pivot.png" style = "height: 60vh; width: 100vh; padding-top: 3vh; display: block; margin: 0 auto;" alt = "screenshot showing the new pivot table with each artist and how many total times they repeat on the playlist in decreasing order">
+                
+            </div>
+        </div>
+      </div>
+            
+            <div class = "graphs">
+                <h1 style = "text-align: right;">who are my top artists?</h1>
+                <p style = "text-align: right;">a series of interactive graphs</p>
+            </div>
+        
+      <div class = "container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10">
+                <h3 style = "padding-top: 10vh; padding-bottom: 5vh; text-align: center;">who are my top artists? a series of interactive charts</h3>
+                
+                <iframe width="731" height="984" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWPfejWiLNGbCbzxEEQ_iWvFmv_yV5irvxAzSSzvNx817kof4FuYmW78wFJvNrWh4tvHI19piRpeQk/pubchart?oid=472012173&amp;format=interactive" style = "display: block; margin: 0 auto;"></iframe>
+                
+                <h5 style = "padding-top: 5vh; padding-bottom: 3vh; text-align: center;">how many out of my top 30 artists are <i>cis male</i>?</h5>
+                
+                <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWPfejWiLNGbCbzxEEQ_iWvFmv_yV5irvxAzSSzvNx817kof4FuYmW78wFJvNrWh4tvHI19piRpeQk/pubchart?oid=1361268352&amp;format=interactive" style = "display: block; margin: 0 auto;"></iframe>
+                <p style = "padding-top: 2vh; text-align: center;"><i>Note: 'Kinda' indicates the existence of groups with at least one non cis male member. 'Unknown' refers to artists who are generally pretty private and don't have personal details on the Internet (i.e. KLOUD). </i></p>
+                
+                <h5 style = "padding-top: 3vh; padding-bottom: 3vh; text-align: center;">how many out of my top 30 artists are <i>white</i>?</h5>
+                
+                <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWPfejWiLNGbCbzxEEQ_iWvFmv_yV5irvxAzSSzvNx817kof4FuYmW78wFJvNrWh4tvHI19piRpeQk/pubchart?oid=1418369532&amp;format=interactive" style = "display: block; margin: 0 auto;"></iframe>
+                
+                <h4 style = "padding-top: 6vh; padding-bottom: 3vh; text-align: center;">the unfortunate conclusion </h4>
+                    
+                <p> There <i>definitely</i> is a diversity issue within my own treasured 'slide into my E'DM's' playlist. Around <strong>93%</strong> of my top 30 artists are white and around <strong>87%</strong> of them are cis male. I'm not sure what's more embarrassing: the fact that I've been a long-time EDM fan (this year marks 10 years) who wasn't aware of the history of EDM until this year, or realizing that I as a POC non-male non-cis listener still naturally gravitate to music from cis white male musicians even though I thought I made the effort to branch out more.</p>
+                
+                <p>In Gen Z terms, turns out I was more 'basic' than I thought I was. </p>
+                
+            </div>
+        </div>
+            
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10" id = "end">
+                <h2 style = "text-align: center;">this is the end of the mini-project!</h2>
+                
+                <h4 style = "text-align: center;"><i>follow the steps above to see what your top EDM artists are like!</i></h4>
+                
+                <h5 style = "padding-top: 5vh;">  Other things related to this topic that I've done: </h5>
+                
+                <p>Asking my friends about their own music tastes &amp; listening habits</p>
+            
+                <ul>
+                    <li>Interview with Ivy Chen | <a href = "https://www.youtube.com/embed/KIcbfG6ZWXs">Link to YouTube video</a></li>
+                    <li>Interview with Emily Chang-Chien | <a href = "https://www.youtube.com/embed/J0gyDqjM2Ls">Link to YouTube video</a></li>
+                
+                </ul>
+    
+                <p style = "padding-top: 3vh;">These casual interviews with two close friends of mine who listened to EDM for similar durations shed light on the nuances regarding the broader topic of "diversity in EDM" and why it's not as simple as just pointing the finger at straight white cis males.</p>
+                
+                <p>One main <strong><i>takeaway</i></strong> that I got from talking with Ivy and Emily is that issues underlying the EDM scene are common in the music and entertainment industries as a whole. The same factors that whitewash EDM contribute to the traditional dominance of cis white males, or more broadly, just males, in other industries.</p>
+                
+                <p>EDM labels and music labels in general need to take firmer stances and actually push for structural change in the industry to highlight local BIPOC and queer/trans voices, because the industry drives the culture enjoyed by consumers, not necessarily the other way around. However, according to Emily, this is hard to do if the company is too large or doesn't have enough resources.</p>
+                
+            </div>
+            
+            
+            <div class="col-12 col-md-10">
+                <p class = "text-center" style = "margin-top: 10vh;"><i>made with love by <a href = "https://github.com/kwonjs">kwon.js</a></i></p>
+            </div>
+            
+        </div>
+      </div>
+        
+        
+        
+        
+    </div><!-- closing container -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
